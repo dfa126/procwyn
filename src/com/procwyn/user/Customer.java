@@ -1,6 +1,12 @@
 package com.procwyn.user;
 
-public class Customer {
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import java.io.Serializable;
+ 
+@ManagedBean
+@SessionScoped
+public class Customer implements Serializable {
 	private String companyName = "";
 	private String companyStreet = "";
 	private String companyCity = "";
